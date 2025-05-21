@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+</head>
+
+<body>
+    <center>
+        <form action="./login.html" autocomplete="off">
+
+            <ins>
+                <h1>Registration Form</h1>
+            </ins>
+
+            <label for="fname">First Name :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="fname" name="First_Name" size="25px" placeholder="Enter your first name"
+                minlength="3" maxlength="30" required><br><br>
+
+            <label for="lname">Last Name :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="lname" name="Last_Name" size="25px" placeholder="Enter your last name" minlength="3"
+                maxlength="30" required><br><br>&nbsp;&nbsp;&nbsp;
+
+            <label for="mail">Email Id :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="mail" name="Email_Id" size="25px" placeholder="Enter your email id"
+                pattern="^[a-z0-9!@#$%^&*]+@gmail\.com$" title="Enter valid mail id" required><br><br>
+            
+            <label for="gender">Gender :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" id="male" name="male" >
+            <label for="male">Male</label>
+             <input type="radio" id="female" name="male" >
+            <label for="female">Female</label><br><br>
+
+            <label for="mnum">Mobile Number :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="mnum" name="Mobile_Number" size="25px" placeholder="Enter your mobile number"
+                pattern="^\+91\d{10}$" title="Enter valid mobile number" required><br><br>
+
+            <label for="paddress">Perminent Address :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <textarea name="Perminent_Address" id="paddress" rows="6" cols="30" placeholder="Enter your perminent address" rows="4"
+                cols="20" required></textarea><br><br>&nbsp;&nbsp;&nbsp;
+
+            <label for="pass">Password :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="pass" name="Password" size="25px" minlength="8" maxlength="10"
+                pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,16}" title="Enter valid password"
+                placeholder="Enter your password" required><br><br>
+
+            <label for="rpass">Re-type Password :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="rpass" name="Re_Ty_Password" size="25px" minlength="8" maxlength="10"
+                placeholder="Enter your retype password"
+                pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,16}" title="Enter valid password"
+                required><br><br>
+
+            <input type="submit" value="submit">
+        </form>
+    </center>
+</body>
+
+</html>
